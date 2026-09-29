@@ -1,54 +1,29 @@
-# Remotion video
+# Remotion Video
+Remotion Video
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+# Description
 
-Welcome to your Remotion project!
+- Video gen by remotion and ai
 
-## Commands
+# Installation and Setup
 
-**Install Dependencies**
+- install vs code (if necessary)
+- kilo (or other ai code assistant)
 
-```console
-npm i
-```
+# Tools 
 
-**Start Preview**
+Remotion, AI
 
-```console
-npm run dev
-```
+# Authors
 
-**Render video**
+@Ideaslink
 
-```console
-npx remotion render
-```
+# Acknowledgement
 
-**Upgrade Remotion**
+Remotion, gpt, ollama
 
-```console
-npx remotion upgrade
-```
+# Version history
+version 1.0.0.1
 
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+# License
+MIT
