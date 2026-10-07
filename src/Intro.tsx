@@ -4,7 +4,9 @@ import {
   useCurrentFrame, 
   useVideoConfig, 
   interpolate, 
-  spring 
+  spring,
+  Audio,
+  staticFile
 } from "remotion";
 
 const CIRCLES = [
@@ -107,21 +109,31 @@ export const Intro: React.FC = () => {
           : Math.sin((frame - circle.delay) * Math.PI / flickerPeriod) * 0.5 + 0.5;
 
         return (
-          <div
-            key={i}
-            style={{
-              position: "absolute",
-              width: circle.size,
-              height: circle.size,
-              borderRadius: "50%",
-              backgroundColor: circle.color,
-              top: circle.top,
-              left: circle.left,
-              transform: `scale(${scale})`,
-              opacity: opacity * flicker,
-              zIndex: 1,
-            }}
-          />
+          <React.Fragment key={i}>
+            <Audio 
+              src={staticFile("ocean-splash.mp3")} 
+              startFrom={0} 
+              volume={1}
+              style={{
+                position: 'absolute',
+                zIndex: -1,
+              }}
+            />
+            <div
+              style={{
+                position: "absolute",
+                width: circle.size,
+                height: circle.size,
+                borderRadius: "50%",
+                backgroundColor: circle.color,
+                top: circle.top,
+                left: circle.left,
+                transform: `scale(${scale})`,
+                opacity: opacity * flicker,
+                zIndex: 1,
+              }}
+            />
+          </React.Fragment>
         );
       })}
       <div

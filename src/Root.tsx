@@ -28,6 +28,7 @@ import { AttentionExplainer } from "./AttentionExplainer";
 import { EVGrowth } from "./EVGrowth";
 import { InfoBox } from "./InfoBox";
 import { InfoCenter } from "./InfoCenter";
+import { AIInAction } from "./AIInAction";
 import { MyComposition } from "./Composition";
 
 export const RemotionRoot: React.FC = () => {
@@ -40,6 +41,10 @@ export const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+        defaultProps={{
+          title: "Default Title",
+          description: "Default Description",
+        }}
       />
       <Composition
         id="InfoCenter"
@@ -61,6 +66,14 @@ export const RemotionRoot: React.FC = () => {
         id="AttentionExplainer"
         component={AttentionExplainer}
         durationInFrames={1800}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      <Composition
+        id="AIInAction"
+        component={AIInAction}
+        durationInFrames={500}
         fps={30}
         width={1920}
         height={1080}
